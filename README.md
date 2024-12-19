@@ -4,7 +4,7 @@ A minimal Streamlit chat input component that allows you to upload files
 
 ## Building the Component
 
-To build the component, run the following command:
+To build the component, go to the `st_chat_file_input/frontend` directory and run the following command:
 
 ```sh
 npm run build
@@ -12,7 +12,7 @@ npm run build
 
 ## Building the Package
 
-To build the package, run the following command:
+To build the package, go to the root directory and run the following command:
 
 ```sh
 python setup.py sdist bdist_wheel
@@ -20,7 +20,7 @@ python setup.py sdist bdist_wheel
 
 ## Installation
 
-To install the package, locate the .whl file and run the following command:
+To install the package, locate the .whl file in the `dist` directory and run the following command:
 
 ```sh
 pip install st_chat_file_input.whl
