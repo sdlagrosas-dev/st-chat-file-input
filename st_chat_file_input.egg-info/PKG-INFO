@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: st_chat_file_input
+Version: 0.0.1
+Summary: A minimal Streamlit chat input component that allows you to upload files
+Home-page: 
+Author: Samuel Darwin Lagrosas
+Author-email: sdlagrosas.work@gmail.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit>=1.41.1
+Provides-Extra: devel
+Requires-Dist: wheel; extra == "devel"
+Requires-Dist: pytest==7.4.0; extra == "devel"
+Requires-Dist: playwright==1.39.0; extra == "devel"
+Requires-Dist: requests==2.31.0; extra == "devel"
+Requires-Dist: pytest-playwright-snapshot==1.0; extra == "devel"
+Requires-Dist: pytest-rerunfailures==12.0; extra == "devel"
+
+# Streamlit Chat Input Component
+
+A minimal Streamlit chat input component that allows you to upload files
+
+## Installation
+
+To install the package, run the following command:
+
+```sh
+pip install st_chat_file_input
+```
+
+## Usage
+
+Here's a basic example of how to use the `st_chat_file_input` component:
+
+```python
+import streamlit as st
+from st_chat_file_input import st_chat_file_input
+
+# Use the chat file input component
+chat_input = st_chat_file_input()
+
+# Display the message (str)
+st.write(chat_input['message'])
+
+# Display the uploaded files (list)
+st.write(chat_input['files'])
+```
